@@ -15,5 +15,3 @@ organizationHomepage := Some(url("http://spray.io"))
 licenses in GlobalScope += "Apache License 2.0" -> url("https://github.com/spray/sbt-revolver/raw/master/LICENSE")
 
 publishTo := Some("S3" at "s3://s3-us-west-2.amazonaws.com/microsistec-redpill-packages/repo")
-
-publishMavenStyle := false
