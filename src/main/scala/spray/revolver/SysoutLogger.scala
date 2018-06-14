@@ -33,12 +33,7 @@ class SysoutLogger(appName: String, color: String, ansiCodesSupported: Boolean =
   }
 
   def log(level: Level.Value, message: => String) {
-    val levelStr = level match {
-      case Level.Info => ""
-      case Level.Error => "[ERROR]"
-      case x@_ => x.toString
-    }
-    println(Utilities.colorize(ansiCodesSupported, "%s%s[RESET]%s " format (color, appName, levelStr)) + message)
+    println(Utilities.colorize(ansiCodesSupported, "%s%s[RESET] " format (color, appName)) + message)
   }
 }
 
