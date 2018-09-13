@@ -1,0 +1,4 @@
+-J-Xss256m
+-Dhttp.port=8181
+-J--add-modules=java.xml.bind,java.activation
+-Denv_version=10

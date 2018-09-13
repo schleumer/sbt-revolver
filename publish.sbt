@@ -2,7 +2,7 @@ name := "sbt-revolver"
 
 organization := "io.spray"
 
-version := "0.9.2-ues.li"
+version := "0.9.3-ues.li"
 
 description := "An SBT plugin for dangerously fast development turnaround in Scala"
 

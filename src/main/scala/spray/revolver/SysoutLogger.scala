@@ -33,7 +33,7 @@ class SysoutLogger(appName: String, color: String, ansiCodesSupported: Boolean =
   }
 
   def log(level: Level.Value, message: => String) {
-    println(Utilities.colorize(ansiCodesSupported, "%s%s[RESET] " format (color, appName)) + message)
+    println(message)
   }
 }
 
